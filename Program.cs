@@ -7,6 +7,7 @@ namespace Aula34MVCConsole
     {
         static void Main(string[] args)
         {
+            //Instanciando o Controller, pois View e Model já estão instanciados dentro dele
             ProdutoController produto = new ProdutoController();
             //produto.Listar();
 

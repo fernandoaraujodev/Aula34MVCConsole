@@ -12,6 +12,7 @@ namespace Aula34MVCConsole.Models
         public string Nome {get;set;}
         private const string PATH = "Database/Produto.csv";
         
+        
         public List<Produto> Ler(){
 
             //Criamos uma lista de produtos

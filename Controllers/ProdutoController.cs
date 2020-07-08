@@ -12,11 +12,18 @@ namespace Aula34MVCConsole.Controllers
         Produto produtoModel = new Produto();
         ProdutoView produtoView = new ProdutoView();
 
+        /// <summary>
+        /// Mostra a lista
+        /// </summary>
         public void Listar()
         {
             produtoView.MostrarNoConsole(produtoModel.Ler());
         }
 
+        /// <summary>
+        /// Filtro de busca baseado no preço do produto
+        /// </summary>
+        /// <param name="_preco">Preço do produto buscado</param>
         public void Filtrar(string _preco)
         {
             List<Produto> lista = produtoModel.Ler();
